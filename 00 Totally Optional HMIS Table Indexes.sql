@@ -1,9 +1,4 @@
-/*
 
-LSA FY2024 Sample Code
-Name:  00 Totally Optional HMIS Table Indexes.sql
-
-*/
 	if not exists (select * from sys.indexes where name = 'ix_hmis_Enrollment_TimesHomelessPastThreeYears_MonthsHomelessPastThreeYears')
 	begin
 		create nonclustered index ix_hmis_Enrollment_TimesHomelessPastThreeYears_MonthsHomelessPastThreeYears on hmis_Enrollment (TimesHomelessPastThreeYears, MonthsHomelessPastThreeYears) include (EnrollmentID)

@@ -1,46 +1,5 @@
-/*
-LSA FY2024 Sample Code
-Name:  02 LSA Output Tables.sql 
 
-FY2024 Changes
-		
-		None
-
-		(Detailed revision history maintained at https://github.com/HMIS/LSASampleCode)
-
-
-	It is not necessary to execute this code every time the LSA is run -- only 
-	if/when there are changes to it.  It creates tables in the structure of the 
-	LSA CSV files.
-	
-	There are some deliberate differences from data typing and nullability as defined by 
-	the HMIS CSV/LSA specs and the CREATE statements here. 
-
-	Columns which may be NULL in the HMIS CSV under some circumstances that do not
-	apply to the LSA upload are created as NOT NULL here.  For example, ProjectType 
-	may be NULL in HMIS if ContinuumProject = 0, but may not be NULL in the LSA
-	because all projects included in the upload must have ContinuumProject = 1.
-	
-	Columns which may not be NULL in HMIS but are not relevant to the LSA are
-	created as NULL here.  For example, UserID values are not imported to the HDX 
-	and may be NULL in the LSA upload. 
-	
-	Date columns are created with data type nvarchar to enable date formatting as 
-	required by HMIS/LSA CSV specs in the INSERT statements.  The only exception is
-	DateDeleted columns -- they must be NULL for all records and formatting is not
-	relevant.
-
-	ExportID columns have a string(32) data type for HMIS purposes, but the values 
-	must match the LSA ReportID, which is an int column; they are created here as int
-	to ensure that the data type, at least, is consistent with LSA requirements.
-
-
-	2.1 Project.csv / lsa_Project
-*/
 if object_id ('lsa_Project') is not NULL drop table lsa_Project
-
---	ProjectType and HousingType may be NULL under some circumstances in the HMIS CSV;
---	none of those circumstances apply to projects included in the LSA upload.
 
 create table lsa_Project(
 	ProjectID nvarchar(32) not NULL,

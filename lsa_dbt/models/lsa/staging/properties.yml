@@ -1,0 +1,10 @@
+version: 2
+
+
+models:
+  - name: lsa_report
+    config:
+      materialized: table
+      database: home
+      schema: lsa_staging
+      

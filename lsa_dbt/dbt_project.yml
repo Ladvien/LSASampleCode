@@ -8,19 +8,23 @@ analysis-paths: ["analyses"]
 test-paths: ["tests"]
 
 # Include other folder paths containing HMIS CSVs 
-seed-paths: ["seeds", "../Sample Data/Sample HMIS Data"]
+seed-paths: [
+  "seeds",
+  "../Sample Data/Sample HMIS Data",
+]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+clean-targets:
   - "target"
   - "dbt_packages"
 
 models:
-  lsa_dbt:
-    example:
-      +materialized: table
+  csv_export:
+    +materialized: table
 
+  lsa:
+    +materialized: table
 
 # Define DBT vars
 vars:

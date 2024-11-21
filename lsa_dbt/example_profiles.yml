@@ -1,0 +1,13 @@
+# This file needs to be saved to `~/.dbt/profiles.yml` to be recognized by dbt.
+lsa_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      database: home
+      schema: lsa
+      user: <POSTGRES_USER>
+      password: ""
+      driver: postgres

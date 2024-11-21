@@ -11,6 +11,10 @@ package-mode = false
 python = "^3.12"
 sqlglot = "^25.30.0"
 rich = "^13.9.4"
+openai = "^1.54.4"
+black = "^24.10.0"
+python-dotenv = "^1.0.1"
+dbt-postgres = "^1.8.2"
 
 
 [build-system]

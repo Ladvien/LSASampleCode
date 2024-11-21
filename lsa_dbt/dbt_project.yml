@@ -19,13 +19,6 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-models:
-  csv_export:
-    +materialized: table
-
-  lsa:
-    +materialized: table
-
 # Define DBT vars
 vars:
   lsa_config:

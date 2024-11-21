@@ -1,0 +1,24 @@
+
+version: 2
+
+seeds:
+  - name: ref_PopHHTypes
+    docs:
+      show: true
+    config:
+      schema: reference
+      quote_columns: false
+
+  - name: ref_RowPopulations
+    docs:
+      show: true
+    config:
+      schema: reference
+      quote_columns: false
+
+  - name: ref_RowValues
+    docs:
+      show: true
+    config:
+      schema: reference
+      quote_columns: false

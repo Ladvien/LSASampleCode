@@ -7,6 +7,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Assessment
@@ -14,6 +15,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: AssessmentQuestions
@@ -21,6 +23,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: AssessmentResults
@@ -28,6 +31,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: CEParticipation
@@ -35,6 +39,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Client
@@ -42,6 +47,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: CurrentLivingSituation
@@ -49,6 +55,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Disabilities
@@ -56,6 +63,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: EmploymentEducation
@@ -63,6 +71,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Enrollment
@@ -70,6 +79,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Event
@@ -77,6 +87,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Exit
@@ -84,6 +95,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
   
   - name: Export
@@ -91,6 +103,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Funder
@@ -98,6 +111,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: HMISParticipation
@@ -105,6 +119,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: HealthAndDV
@@ -112,6 +127,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: IncomeBenefits
@@ -119,6 +135,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Inventory
@@ -126,6 +143,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Organization
@@ -133,6 +151,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Project
@@ -140,6 +159,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: ProjectCoC
@@ -147,6 +167,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: Services
@@ -154,6 +175,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
 
   - name: User
@@ -161,6 +183,7 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
   
   - name: YouthEducationStatus
@@ -168,5 +191,6 @@ seeds:
     docs:
       show: true
     config:
+      schema: hmis_csv
       quote_columns: false
     

@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: lsa_staging
+
+    tables:
+      - name: lsa_report

@@ -1,6 +1,7 @@
 # LSA in Dbt
 
 ## TODO:
+- Convert the `lsa_report` model to use values from the `dbt_project.yml`
 - Dbt'ize the following files:
     - 00 Totally Optional HMIS Table Indexes.sql
     - 01 Temp Reporting and Reference Tables.sql
@@ -24,6 +25,7 @@
 ## Done
 - Load HMIS CSV Export seeds
 - Define YAML for CSV Export seeds
+- Move "INSERT"s into Dbt seed files.
 
 
 ### Using the starter project

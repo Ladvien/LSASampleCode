@@ -1,5 +1,11 @@
-{% macro convert_column_names_to_snake_case(relation) %}
-    
+{% macro convert_column_names_to_snake_case(relation, target_schema) %}
+
+{{
+    config(
+        materialized='view',
+        schema=target_schema,
+    )
+}}    
     {% set columns = adapter.get_columns_in_relation(relation) %}
     {% set re = modules.re %}
 

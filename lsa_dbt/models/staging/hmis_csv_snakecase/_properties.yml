@@ -1,0 +1,26 @@
+
+models:
+  - name: affiliation
+  - name: assessment
+  - name: assessment_questions
+  - name: assessment_results
+  - name: ce_participation
+  - name: client
+  - name: current_living_situation
+  - name: disabilities
+  - name: employment_education
+  - name: enrollment
+  - name: event
+  - name: exit
+  - name: export
+  - name: funder
+  - name: health_and_dv
+  - name: hmis_participation
+  - name: income_benefits
+  - name: inventory
+  - name: organization
+  - name: project
+  - name: project_co_c
+  - name: services
+  - name: user
+  - name: youth_education_status

@@ -1,5 +1,8 @@
 # LSA in Dbt
 
+## WILO:
+* I'm working on getting all of the dependencies to source correctly for `models/lsa/lsa_project.sql` pulling correctly.
+
 ## TODO:
 - Convert the `lsa_report` model to use values from the `dbt_project.yml`
 - Dbt'ize the following files:

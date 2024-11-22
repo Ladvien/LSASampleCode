@@ -1,5 +1,3 @@
-{#
-
 {{ config(
     materialized='table',
 ) }}
@@ -38,7 +36,7 @@ core as (
         end as p_end,
         rpt.lookback_date,
         rpt.report_end
-    from {{ source('lsa_hmis_csv', 'Enrollment') }} hoh
+    from {{ source('lsa_staging', 'enrollment') }} hoh
     inner join {{ ref('lsa_report') }} rpt 
         on rpt.report_end >= hoh.entry_date 
         and rpt.report_coc = hoh.enrollment_coc
@@ -54,8 +52,8 @@ core as (
                 when hp.operating_end_date <= cd.cohort_end then hp.operating_end_date 
                 else null 
             end as operating_end
-        from {{ source('lsa_hmis_csv', 'Project') }} hp
-        inner join {{ source('lsa_hmis_csv', 'Organization') }} ho 
+        from {{ source('lsa_staging', 'project') }} hp
+        inner join {{ source('lsa_staging', 'organization') }} ho 
             on ho.organization_id = hp.organization_id
         inner join {{ ref('tlsa_cohort_dates') }} cd 
             on cd.cohort = 1
@@ -69,11 +67,11 @@ core as (
                or (hp.operating_end_date > hp.operating_start_date 
                    and hp.operating_end_date > cd.lookback_date))
     ) p on p.project_id = hoh.project_id
-    left join {{ source('lsa_hmis_csv', 'Exit') }} hx 
+    left join {{ source('lsa_staging', 'exit') }} hx 
         on hx.enrollment_id = hoh.enrollment_id
         and (hx.exit_date <= p.operating_end or p.operating_end is null)
         and hx.date_deleted is null
-    left join {{ source('lsa_hmis_csv', 'Services') }} svc 
+    left join {{ source('lsa_staging', 'services') }} svc 
         on svc.enrollment_id = hoh.enrollment_id
         and svc.record_type = 200
         and svc.date_deleted is null
@@ -125,4 +123,3 @@ final as (
 
 select * from final
 
-#}

@@ -34,4 +34,31 @@ vars:
     # Define the LSA scope
     lsa_scope: 1
 
+  hmis_csv_metadata:
+    csv_names:
+      - "Affiliation"
+      - "Assessment"
+      - "AssessmentQuestions"
+      - "AssessmentResults"
+      - "CEParticipation"
+      - "Client"
+      - "CurrentLivingSituation"
+      - "Disabilities"
+      - "EmploymentEducation"
+      - "Enrollment"
+      - "Event"
+      - "Exit"
+      - "Export"
+      - "Funder"
+      - "HMISParticipation"
+      - "HealthAndDV"
+      - "IncomeBenefits"
+      - "Inventory"
+      - "Organization"
+      - "Project"
+      - "ProjectCoC"
+      - "Services"
+      - "User"
+      - "YouthEducationStatus"
+
 

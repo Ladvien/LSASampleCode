@@ -4,9 +4,27 @@ sources:
   - name: lsa_hmis_csv
     tables:
       - name: Affiliation
+      - name: Assessment
+      - name: AssessmentQuestions
+      - name: AssessmentResults
+      - name: CEParticipation
+      - name: Client
+      - name: CurrentLivingSituation
+      - name: Disabilities
+      - name: EmploymentEducation
       - name: Enrollment
+      - name: Event
       - name: Exit
-      - name: Project
-      - name: Services
+      - name: Export
+      - name: Funder
+      - name: HMISParticipation
+      - name: HealthAndDV
+      - name: IncomeBenefits
+      - name: Inventory
       - name: Organization
+      - name: Project
+      - name: ProjectCoC
+      - name: Services
+      - name: User
+      - name: YouthEducationStatus
 

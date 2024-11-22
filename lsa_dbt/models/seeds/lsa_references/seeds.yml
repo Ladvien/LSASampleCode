@@ -2,21 +2,21 @@
 version: 2
 
 seeds:
-  - name: ref_PopHHTypes
+  - name: ref_pop_hh_types
     docs:
       show: true
     config:
       schema: reference
       quote_columns: false
 
-  - name: ref_RowPopulations
+  - name: ref_row_populations
     docs:
       show: true
     config:
       schema: reference
       quote_columns: false
 
-  - name: ref_RowValues
+  - name: ref_row_values
     docs:
       show: true
     config:

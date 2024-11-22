@@ -1,6 +1,12 @@
 version: 2
 
 sources:
-  - name: hmis_csv
+  - name: lsa_hmis_csv
     tables:
       - name: Affiliation
+      - name: Enrollment
+      - name: Exit
+      - name: Project
+      - name: Services
+      - name: Organization
+

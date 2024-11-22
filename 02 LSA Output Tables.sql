@@ -151,19 +151,19 @@ create table lsa_HMISParticipation (
 /*
 	2.7 Affiliation.csv / lsa_Affiliation
 */
-if object_id ('lsa_Affiliation') is not NULL drop table lsa_Affiliation
+-- if object_id ('lsa_Affiliation') is not NULL drop table lsa_Affiliation
 
-create table lsa_Affiliation (
-	AffiliationID nvarchar(32) not NULL,
-	ProjectID nvarchar(32) not NULL,
-	ResProjectID nvarchar(32) not NULL,
-	DateCreated nvarchar(19) not NULL,							--HMIS: datetime
-	DateUpdated nvarchar(19) not NULL,							--HMIS: datetime
-	UserID nvarchar(32),										--HMIS: not NULL
-	DateDeleted datetime,
-	ExportID int not NULL,										--HMIS: string(32)
-	CONSTRAINT pk_lsa_Affiliation PRIMARY KEY CLUSTERED (AffiliationID)
-	)
+-- create table lsa_Affiliation (
+-- 	AffiliationID nvarchar(32) not NULL,
+-- 	ProjectID nvarchar(32) not NULL,
+-- 	ResProjectID nvarchar(32) not NULL,
+-- 	DateCreated nvarchar(19) not NULL,							--HMIS: datetime
+-- 	DateUpdated nvarchar(19) not NULL,							--HMIS: datetime
+-- 	UserID nvarchar(32),										--HMIS: not NULL
+-- 	DateDeleted datetime,
+-- 	ExportID int not NULL,										--HMIS: string(32)
+-- 	CONSTRAINT pk_lsa_Affiliation PRIMARY KEY CLUSTERED (AffiliationID)
+-- 	)
 	
 /*
 	2.8 LSAReport.csv / lsa_Report

@@ -5,8 +5,8 @@
 -- Using variables defined in dbt_project.yml
 SELECT
     (EXTRACT(YEAR FROM CURRENT_DATE)::INT % 10) * 100000000 + CAST(TO_CHAR(CURRENT_DATE, 'MMDDHH24MI') AS INT) AS report_id,
-    '{{ var("lsa_config")["report_dates"]["start"] }}'::DATE AS report_start_date,
-    '{{ var("lsa_config")["report_dates"]["end"] }}'::DATE AS report_end_date,
+    '{{ var("lsa_config")["report_dates"]["start"] }}'::DATE AS report_start,
+    '{{ var("lsa_config")["report_dates"]["end"] }}'::DATE AS report_end,
     '{{ var("lsa_config")["report_coc"] }}' AS report_coc,
     '{{ var("lsa_config")["software_vendor"] }}' AS software_vendor,
     '{{ var("lsa_config")["software_name"] }}' AS software_name,

@@ -8,7 +8,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Assessment
     description: "Seed data for the assessment table."
@@ -16,7 +16,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: AssessmentQuestions
     description: "Seed data for the assessment questions table."
@@ -24,7 +24,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: AssessmentResults
     description: "Seed data for the assessment results table."
@@ -32,7 +32,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: CEParticipation
     description: "Seed data for the coordinated entry participation table."
@@ -40,7 +40,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Client
     description: "Seed data for the client table."
@@ -48,7 +48,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: CurrentLivingSituation
     description: "Seed data for the current living situation table."
@@ -56,7 +56,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Disabilities
     description: "Seed data for the disabilities table."
@@ -64,7 +64,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: EmploymentEducation
     description: "Seed data for the employment education table."
@@ -72,7 +72,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Enrollment
     description: "Seed data for the enrollment table."
@@ -80,7 +80,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Event
     description: "Seed data for the event table."
@@ -88,7 +88,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Exit
     description: "Seed data for the exit table."
@@ -96,7 +96,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
   
   - name: Export
     description: "Seed data for the export table."
@@ -104,7 +104,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Funder
     description: "Seed data for the funder table."
@@ -112,7 +112,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: HMISParticipation
     description: "Seed data for the HMIS participation table."
@@ -120,7 +120,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: HealthAndDV
     description: "Seed data for the health and DV table."
@@ -128,7 +128,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: IncomeBenefits
     description: "Seed data for the income benefits table."
@@ -136,7 +136,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Inventory
     description: "Seed data for the inventory table."
@@ -144,7 +144,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Organization
     description: "Seed data for the organization table."
@@ -152,7 +152,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Project
     description: "Seed data for the project table."
@@ -160,7 +160,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: ProjectCoC
     description: "Seed data for the project CoC table."
@@ -168,7 +168,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: Services
     description: "Seed data for the services table."
@@ -176,7 +176,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
 
   - name: User
     description: "Seed data for the user table."
@@ -184,7 +184,7 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
   
   - name: YouthEducationStatus
     description: "Seed data for the youth education status table."
@@ -192,5 +192,5 @@ seeds:
       show: true
     config:
       schema: hmis_csv
-      quote_columns: false
+      quote_columns: true
     
